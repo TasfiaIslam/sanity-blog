@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'press-start': ['"Shadows Into Light"', 'cursive']
+        'shadow-light': ['"Shadows Into Light"', 'cursive']
       }
     },
   },
