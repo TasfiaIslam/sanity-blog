@@ -31,8 +31,8 @@ const Project = () =>  {
 
     return (
         <main className="min-h-screen">
-            <section className="container  mx-auto">
-            <h1 className="text-2xl flex justify-center font-shadow-light text-gray-600">Projects</h1>
+            <section className="section-container">
+            <h1 className="page-heading">Projects</h1>
                 <h2 className="text-lg text-gray-600  flex justify-center mb-12">Welcome to my projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projectData.map((project) =>(

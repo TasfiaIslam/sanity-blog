@@ -5,7 +5,8 @@ import { SocialIcon } from 'react-social-icons';
 const Navbar = () => {
     return (
         <header className="bg-gray-900">
-            <div className="container mx-auto flex justify-between">
+            <div className="section-container">
+                <div className="flex justify-between">
                 <nav className="flex">
                     <NavLink to="/" exact className="nav-link" activeClassName="text-green-400">
                         Tasfia
@@ -20,10 +21,11 @@ const Navbar = () => {
                         About Me!
                     </NavLink>
                 </nav>
-                <div className="inline-flex py-6 px-3 my-3">
+                <div className="inline-flex py-6 md:px-3 my-3">
                     <SocialIcon url="https://github.com/TasfiaIslam/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
                     <SocialIcon url="https://github.com/TasfiaIslam/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
                     <SocialIcon url="https://github.com/TasfiaIslam/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}}/>
+                </div>
                 </div>
             </div>
         </header>

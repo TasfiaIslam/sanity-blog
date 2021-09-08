@@ -1,4 +1,5 @@
-export default {
+export default 
+ {
   name: 'post',
   title: 'Post',
   type: 'document',
@@ -57,3 +58,5 @@ export default {
     },
   },
 }
+
+

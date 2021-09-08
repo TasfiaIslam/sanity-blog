@@ -22,5 +22,8 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "files": [
+    "@types/block-content-to-react.d.ts"
+  ],
 }
