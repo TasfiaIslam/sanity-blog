@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from '../client.js';
-import postType from '../../blog/schemas/post';
 
 export interface asset {
   _id: string;
@@ -44,7 +43,6 @@ const Post = () => {
       )
       .then((data) => {
         setPost(data);
-        console.log(data);
       })
       .catch(console.error);
   }, []);

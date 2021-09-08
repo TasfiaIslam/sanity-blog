@@ -4,7 +4,6 @@ import sanityClient from '../client.js';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 import { RouteComponentProps } from 'react-router-dom';
-import postType from '../../blog/schemas/post';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source: string) {
@@ -24,14 +23,6 @@ export interface mainImage {
 export interface slug {
   current: string;
 }
-
-// export interface name {
-//     author: {name: string};
-// }
-
-// export interface authorImage {
-//     author: {image: asset};
-// }
 
 export interface ISinglePost {
   _id: string;
