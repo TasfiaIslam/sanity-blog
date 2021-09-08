@@ -74,9 +74,6 @@ const SinglePost: React.FC<RouteComponentProps<any>> = () => {
       .catch(console.error);
   }, [slug]);
 
-  {
-    console.log(singlePost);
-  }
   if (!singlePost) {
     return <div>"loading"</div>;
   }
