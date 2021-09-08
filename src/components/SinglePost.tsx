@@ -71,9 +71,9 @@ const SinglePost: React.FC<RouteComponentProps<any>> = () => {
 
   return (
     <main className="min-h-screen">
-      <section className="section-container">
+      <section className="w-11/12 mx-auto">
         <h1 className="page-heading">Post Detail</h1>
-        <article>
+        <article className="w-1/2  mx-auto my-4">
           <header className="mb-4">
             <h1 className="my-4 font-semibold text-lg 2xl:text-xl">{singlePost.title}</h1>
             <div className="w-full flex items-center space-x-2">
@@ -85,8 +85,12 @@ const SinglePost: React.FC<RouteComponentProps<any>> = () => {
               <p className="text-base 2xl:text-lg text-gray-400">{singlePost.name}</p>
             </div>
           </header>
-          <img src={singlePost.mainImage.asset.url} alt={singlePost.title} />
-          <div className="mt-4 prose 2xl:prose-xl text-justify">
+          <img
+            className="w-full h-full object-cover"
+            src={singlePost.mainImage.asset.url}
+            alt={singlePost.title}
+          />
+          <div className="my-8 text-justify">
             <BlockContent blocks={singlePost.body} projectId="nkackl28" dataset="production" />
           </div>
         </article>
